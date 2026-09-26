@@ -43,6 +43,4 @@ Random seed 20260922 is fixed; the main run takes about one minute.
 
 ## AI use
 
-The analysis code, figures, and manuscript draft were produced with Anthropic's Claude
-(Claude Fable 5.1, September 2026) under the author's direction. The author verified the data,
-statistics, and references and is accountable for the work.
+During the preparation of this work, Anthropic’s Claude (Opus 4.8) was used to assist with ideation and initial manuscript drafting.
