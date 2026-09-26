@@ -1,21 +1,11 @@
-"""
-Does Dhaka's air get cleaner when the city empties for Eid?
-A natural-experiment analysis of reference-grade PM2.5 (US Embassy Dhaka monitor, 2016-2025).
 
-Reproducible pipeline: raw hourly CSVs -> daily means -> event study around 18 Eid holidays
--> pooled effect with bootstrap CI, paired tests, placebo (permutation) test, diurnal profile,
-sensitivity analyses, figures.
-
-Data: U.S. Department of State / U.S. EPA AirNow "Embassy Historical" hourly PM2.5 files
-(Dhaka), archived at https://github.com/dolekhanhdang/Air-Quality-Data-from-U.S.-Embassies
-"""
 import glob, json, os
 import numpy as np
 import pandas as pd
 from scipy import stats
 
-DATA_GLOB = "/home/claude/embassy_aq/Data/Dhaka/*/Dhaka_PM2.5_*_YTD.csv"
-OUT = "/home/claude/work"
+DATA_GLOB = "/home/embassy_aq/Data/Dhaka/*/Dhaka_PM2.5_*_YTD.csv"
+OUT = "/home/work"
 os.makedirs(OUT, exist_ok=True)
 RNG = np.random.default_rng(20260922)
 
