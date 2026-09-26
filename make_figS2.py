@@ -1,6 +1,6 @@
 import json, numpy as np, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
-W="/home/claude/work"; o=json.load(open(f"{W}/weather_control.json"))
+W="/home/work"; o=json.load(open(f"{W}/weather_control.json"))
 main=json.load(open(f"{W}/results.json"))
 plt.rcParams.update({"font.family":"DejaVu Sans","font.size":9,"axes.spines.top":False,"axes.spines.right":False})
 rows=[("All 16 holidays (main result)", main["pooled_all"]["pct"], main["pooled_all"]["ci_pct"], "#888"),
