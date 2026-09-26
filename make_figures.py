@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 from matplotlib.lines import Line2D
 
-W = "/home/claude/work"
+W = "/home/work"
 r = json.load(open(f"{W}/results.json"))
 ev = pd.read_csv(f"{W}/per_event_results.csv")
 curve = pd.read_csv(f"{W}/event_study_curve.csv")
