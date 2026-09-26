@@ -12,7 +12,7 @@ RNG = np.random.default_rng(20260922)
 colspecs = [(0,6),(14,22),(24,30),(35,41),(78,83),(88,93),(118,123),(123,124)]
 names = ["stn","yearmoda","temp_f","dewp_f","wdsp_kn","mxspd_kn","prcp_in","prcp_flag"]
 rows = []
-for f in sorted(glob.glob("/home/claude/gsod_dhaka/*/419230-99999-*.op")):
+for f in sorted(glob.glob("/home/gsod_dhaka/*/419230-99999-*.op")):
     d = pd.read_fwf(f, colspecs=colspecs, names=names, skiprows=1)
     rows.append(d)
 g = pd.concat(rows, ignore_index=True)
