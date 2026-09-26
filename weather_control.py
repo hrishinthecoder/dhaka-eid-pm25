@@ -1,15 +1,10 @@
-"""
-Weather control for the Eid PM2.5 effect, 2016-2020 subset.
-Independent station weather (NOAA GSOD, Dhaka WMO 419230) merged with the daily
-embassy PM2.5 series. Tests whether the Eid drop survives adjustment for
-precipitation, wind, temperature and humidity.
-"""
+
 import glob, json
 import numpy as np, pandas as pd
 from scipy import stats
 from sklearn.ensemble import RandomForestRegressor
 
-W = "/home/claude/work"
+W = "/home/work"
 RNG = np.random.default_rng(20260922)
 
 # ---------------------------------------------------------------- GSOD weather
