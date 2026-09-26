@@ -2,7 +2,7 @@ import json, numpy as np, pandas as pd
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
-W="/home/claude/work"
+W="/home/work"
 r=json.load(open(f"{W}/results.json")); ev=pd.read_csv(f"{W}/per_event_results.csv")
 curve=pd.read_csv(f"{W}/event_study_curve.csv"); diur=pd.read_csv(f"{W}/diurnal_relative.csv",index_col=0)
 placebo=np.load(f"{W}/placebo_means.npy")
